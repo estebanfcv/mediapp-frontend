@@ -1,0 +1,20 @@
+<mat-toolbar>Mi perfil</mat-toolbar>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                Username: {{usuario.username}}
+            </mat-card-title>
+            <br/>
+            <mat-card-subtitle>
+                Roles:
+            </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div *ngFor="let r of usuario.roles">
+                <p>{{r}}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
